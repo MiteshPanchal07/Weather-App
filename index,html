@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city" placeholder="Enter city name...">
+            <button id="submit">Search</button>
+        </div>
+
+        <div class="main-info">
+            <div class="current-weather">
+                <div class="city-name" id="cityName">Loading...</div>
+                <div class="temperature"><span id="temp">--</span>°C</div>
+                <div class="feels-like">Feels like: <span id="feels_like">--</span>°C</div>
+            </div>
+
+            <div class="details">
+                <h3>Weather Details</h3>
+                <div class="detail-item">
+                    <i class="fas fa-temperature-high"></i>
+                    <span class="detail-label">Temperature:</span>
+                    <span id="temp2">--</span>°C
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-temperature-arrow-up"></i>
+                    <span class="detail-label">Max Temp:</span>
+                    <span id="max_temp">--</span>°C
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-temperature-arrow-down"></i>
+                    <span class="detail-label">Min Temp:</span>
+                    <span id="min_temp">--</span>°C
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <span class="detail-label">Humidity:</span>
+                    <span id="humidity">--</span>%
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <span class="detail-label">Wind Speed:</span>
+                    <span id="wind_speed">--</span> m/s
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-compass"></i>
+                    <span class="detail-label">Wind Direction:</span>
+                    <span id="wind_degrees">--</span>°
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <div class="forecast-item">
+                <h4>Humidity</h4>
+                <i class="fas fa-tint forecast-icon"></i>
+                <div class="forecast-temp"><span id="humidity2">--</span>%</div>
+                <div class="forecast-detail">Air moisture</div>
+            </div>
+            <div class="forecast-item">
+                <h4>Wind</h4>
+                <i class="fas fa-wind forecast-icon"></i>
+                <div class="forecast-temp"><span id="wind_speed2">--</span> m/s</div>
+                <div class="forecast-detail">Current wind</div>
+            </div>
+            <div class="forecast-item">
+                <h4>Sunrise</h4>
+                <i class="fas fa-sun forecast-icon"></i>
+                <div class="forecast-temp"><span id="sunrise">--:--</span></div>
+                <div class="forecast-detail">Morning</div>
+            </div>
+            <div class="forecast-item">
+                <h4>Sunset</h4>
+                <i class="fas fa-moon forecast-icon"></i>
+                <div class="forecast-temp"><span id="sunset">--:--</span></div>
+                <div class="forecast-detail">Evening</div>
+            </div>
+        </div>
+    </div>
+    <script src="sc.js"></script>
+</body>
+
+</html>
